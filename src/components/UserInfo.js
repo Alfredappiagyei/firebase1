@@ -9,7 +9,7 @@ const User = ({ name, email, contact, id, relation, removeUser, }) => {
     return (
         <div >
           <div className="row" style={{width:"100%"}}>
-            <div className="col-md-3"> <span><img style={{ padding: "22px", background: "grey" }}></img>{name}</span></div>
+            <div className="col-md-3"> <span><img alt="" style={{ padding: "22px", background: "grey" }}></img>{name}</span></div>
             <div className="col-md-2"><p>{email}</p></div>
             <div className="col-md-2">{contact}</div>
             <div className="col-md-2">{relation}</div>
