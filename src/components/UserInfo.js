@@ -20,15 +20,15 @@ const User = ({ name, email, contact, id, relation, removeUser, }) => {
                        
             </div>
             <div className="col-md-2">
-            <button style={{ padding: "8px 12px", background: "blue", color: "#fff", borderRadius: "5px", marginRight: "2px", border: "none" }}>
-                      <Link to = {`/edit/${id}`}><span class="glyphicon glyphicon-edit"></span></Link>
+            <button style={{ padding: "8px 12px", background: "blue",  borderRadius: "5px", marginRight: "2px", border: "none" }}>
+                      <Link to = {`/edit/${id}`} style={{color: "#fff"}}><span class="glyphicon glyphicon-edit"></span></Link>
                       </button>
 
                       <button  onClick={handleClick} style={{ padding: "8px 12px", background: "red", color: "#fff", borderRadius: "5px", border: "none" }}>
                       <span class="glyphicon glyphicon-trash"></span>
-                      </button><hr/>
+                      </button>
             </div>
-          </div>
+          </div><hr/>
            
                       
          </div>   

@@ -50,7 +50,7 @@ import  {Link}  from "react-router-dom";
         <p> <Link to="/"><span style={{fontSize:"20px"}} class="glyphicon glyphicon-fast-backward"></span></Link></p>
         <div className="row"  style={{display:"block",  textAlign:"center", backgroundColor:"lightblue",   borderRadius:"10px",   }}>
         <form onSubmit={this.handleSubmit}   style={{display:"inline-block",   textAlign:"left", margin:"50px 0px 0px 0px"}}  >
-         <input type="text" class="form-control" name="name" placeholder="Name" value={this.state.name} onChange={this.handleChange} style={{width:"300px"}} /><br/>
+         <input type="name" class="form-control" name="name" placeholder="Name" value={this.state.name} onChange={this.handleChange} style={{width:"300px"}} /><br/>
     
         <input type="text" class="form-control" name="Industry" placeholder="Email" value={this.state.email} onChange={this.handleChange} style={{width:"300px"}}/><br/>
   
@@ -59,7 +59,9 @@ import  {Link}  from "react-router-dom";
         <input type="date" class="form-control" name="relation" placeholder="" value={this.state.relation} onChange={this.handleChange} style={{width:"300px"}} /><br/>
 
         <div>
-          <button style={{margin:"50px 100px",}} type="submit" ><b>Apdate User</b></button>
+        <button class="button">
+            Update startup
+        </button>
         </div>
       </form>
           

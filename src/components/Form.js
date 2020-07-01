@@ -37,9 +37,9 @@ export class UserForm extends Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form onSubmit={this.handleSubmit} style={{margin:"auto"}}>
     
-          <input type="text" class="form-control" name="name" placeholder="Company Name" value={this.state.name} onChange={this.handleChange} style={{width:"300px"}} /><br/>
+          <input type="name" class="form-control" name="name" placeholder="Company Name" value={this.state.name} onChange={this.handleChange} style={{width:"300px"}} /><br/>
     
           <input type="text" class="form-control" name="email" placeholder="Industry" value={this.state.email} onChange={this.handleChange} style={{width:"300px"}}/><br/>
         
