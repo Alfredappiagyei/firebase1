@@ -30,9 +30,9 @@ export class App extends Component {
           <span class="caret"></span>
           </button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-            <li><a>Dashboard</a></li>
+          <li> <Link to ="/form" style={{color:"black"}}>Dashboard</Link></li>
             <li> <Link to ="/form" style={{color:"black"}}>Add Startup</Link></li>
-            <li><a>Startup Details</a></li>
+            <li> <Link to ="/form" style={{color:"black"}}>Startup Details</Link></li>
           </ul>
         </div>
       </div>
@@ -59,17 +59,6 @@ export class App extends Component {
             <UserForm addUser={this.addNewUser} />
             </div>
             </div>
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -113,41 +102,10 @@ export class App extends Component {
                   );
                 })}
                    </div>
-                   
-                            
-                          
-              
-
             </section>
-
- </div>
-               
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-       
+           </div>     
             </div>
-           
-
-          </div>
-
-        
+          </div>    
       </div>
       </div>
     );
@@ -181,28 +139,7 @@ export default connect(mapStateToProps, mapDispatchToProps)(App);
 
 
 
-
-
-
-// <div className="form-container">
-// <UserForm addUser={this.addNewUser} />
-// </div>
-
-// <div className="users-container">
-// {this.props.users.map((people, index) => {
-//   return (
-//     <User
-
-//       key={people.id}
-//       id={people.id}
-//       name={people.name}
-//       email={people.email}
-//       contact={people.contact}
-//       removeUser={this.deleteUser}
-//     />
-//   );
-// })}
-// </div>
+ 
 
 
 
